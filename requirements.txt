@@ -1,0 +1,13 @@
+the development of the department system of Tanay Rizal with virtual tour,
+deadline before august 15,
+5k
+
+visitor:
+search attraction Lazada/shopee
+news can be seen
+
+admin: 
+creation of Tourist centre article
+creation of Food tourism article
+creation of News and announcements
+change Profile into Admin Accounts page

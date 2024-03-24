@@ -1,0 +1,45 @@
+INFO - 2023-05-27 22:30:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 22:30:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 22:30:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 22:30:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 22:30:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 22:30:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 22:30:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 22:30:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 22:30:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-27 22:30:40 --> Undefined variable $errors
+in APPPATH\Views\admin\foodManagement.php on line 43.
+ 1 APPPATH\Views\admin\foodManagement.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'C:\\xampp\\htdocs\\ci4_capstone1.0\\app\\Views\\admin\\foodManagement.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\ci4_capstone1.0\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_capstone1.0\\public\\index.php')
+CRITICAL - 2023-05-27 22:32:29 --> Undefined variable $errors
+in APPPATH\Views\admin\foodManagement.php on line 43.
+ 1 APPPATH\Views\admin\foodManagement.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'C:\\xampp\\htdocs\\ci4_capstone1.0\\app\\Views\\admin\\foodManagement.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\ci4_capstone1.0\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_capstone1.0\\public\\index.php')
+CRITICAL - 2023-05-27 22:33:19 --> Undefined variable $errors
+in APPPATH\Views\admin\foodManagement.php on line 43.
+ 1 APPPATH\Views\admin\foodManagement.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'C:\\xampp\\htdocs\\ci4_capstone1.0\\app\\Views\\admin\\foodManagement.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\ci4_capstone1.0\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_capstone1.0\\public\\index.php')

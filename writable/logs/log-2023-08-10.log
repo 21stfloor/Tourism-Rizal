@@ -1,0 +1,195 @@
+INFO - 2023-08-10 02:14:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-10 02:14:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-10 02:15:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-10 02:15:08 --> Undefined variable $errors
+in APPPATH\Views\admin\foodManagement.php on line 44.
+ 1 APPPATH\Views\admin\foodManagement.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 44)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-10 02:15:23 --> Undefined variable $errors
+in APPPATH\Views\admin\foodManagement.php on line 44.
+ 1 APPPATH\Views\admin\foodManagement.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 44)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-10 02:18:30 --> Undefined variable $errors
+in APPPATH\Views\admin\foodManagement.php on line 44.
+ 1 APPPATH\Views\admin\foodManagement.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 44)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+INFO - 2023-08-10 02:25:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-10 02:25:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-10 02:25:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-10 02:25:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-10 02:33:25 --> Undefined variable $users
+in APPPATH\Views\admin\dataManagement.php on line 53.
+ 1 APPPATH\Views\admin\dataManagement.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\dataManagement.php', 53)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\dataManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/dataManagement.php', [], true)
+ 5 APPPATH\Controllers\DataManagement.php(13): view('/admin/dataManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DataManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-10 02:33:53 --> Undefined variable $users
+in APPPATH\Views\admin\dataManagement.php on line 53.
+ 1 APPPATH\Views\admin\dataManagement.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\dataManagement.php', 53)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\dataManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/dataManagement.php', [], true)
+ 5 APPPATH\Controllers\DataManagement.php(13): view('/admin/dataManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DataManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-10 02:33:54 --> Undefined variable $users
+in APPPATH\Views\admin\dataManagement.php on line 53.
+ 1 APPPATH\Views\admin\dataManagement.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\dataManagement.php', 53)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\dataManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/dataManagement.php', [], true)
+ 5 APPPATH\Controllers\DataManagement.php(13): view('/admin/dataManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DataManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-10 02:35:34 --> Invalid file: "user/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/index.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('user/index', [], true)
+ 3 APPPATH\Controllers\UserController.php(16): view('user/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UserController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-10 02:48:53 --> Undefined variable $touristCentres
+in APPPATH\Views\admin\attractionsManagement.php on line 44.
+ 1 APPPATH\Views\admin\attractionsManagement.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $touristCentres', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\attractionsManagement.php', 44)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\attractionsManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/attractionsManagement.php', [], true)
+ 5 APPPATH\Controllers\AttractionsManagement.php(13): view('/admin/attractionsManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AttractionsManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttractionsManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+ERROR - 2023-08-10 02:50:29 --> mysqli_sql_exception: Table 'dot_managementdb.tourist_centres' doesn't exist in D:\xampp\htdocs\Tourism-Rizal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\xampp\htdocs\Tourism-Rizal\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\Tourism-Rizal\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\Tourism-Rizal\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\Tourism-Rizal\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\Tourism-Rizal\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\Tourism-Rizal\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\Tourism-Rizal\app\Controllers\TouristCentreController.php(13): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\Tourism-Rizal\system\CodeIgniter.php(934): App\Controllers\TouristCentreController->index()
+#8 D:\xampp\htdocs\Tourism-Rizal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TouristCentreController))
+#9 D:\xampp\htdocs\Tourism-Rizal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\Tourism-Rizal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\Tourism-Rizal\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-08-10 02:50:36 --> Table 'dot_managementdb.tourist_centres' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `tourist_centres`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tourist_centres`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tourist_centres`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tourist_centres`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\TouristCentreController.php(13): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TouristCentreController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TouristCentreController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+ERROR - 2023-08-10 02:52:02 --> mysqli_sql_exception: Table 'dot_managementdb.tourist_centres' doesn't exist in D:\xampp\htdocs\Tourism-Rizal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\xampp\htdocs\Tourism-Rizal\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\Tourism-Rizal\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\Tourism-Rizal\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\Tourism-Rizal\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\Tourism-Rizal\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\Tourism-Rizal\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\Tourism-Rizal\app\Controllers\TouristCentreController.php(13): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\Tourism-Rizal\system\CodeIgniter.php(934): App\Controllers\TouristCentreController->index()
+#8 D:\xampp\htdocs\Tourism-Rizal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TouristCentreController))
+#9 D:\xampp\htdocs\Tourism-Rizal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\Tourism-Rizal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\Tourism-Rizal\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-08-10 02:52:06 --> Table 'dot_managementdb.tourist_centres' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `tourist_centres`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tourist_centres`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tourist_centres`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tourist_centres`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\TouristCentreController.php(13): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TouristCentreController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TouristCentreController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+ERROR - 2023-08-10 03:00:51 --> mysqli_sql_exception: Unknown table 'dot_managementdb.tourist_centres' in D:\xampp\htdocs\Tourism-Rizal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\xampp\htdocs\Tourism-Rizal\system\Database\MySQLi\Connection.php(295): mysqli->query('DROP TABLE `tou...', 0)
+#1 D:\xampp\htdocs\Tourism-Rizal\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE `tou...')
+#2 D:\xampp\htdocs\Tourism-Rizal\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE `tou...')
+#3 D:\xampp\htdocs\Tourism-Rizal\system\Database\Forge.php(637): CodeIgniter\Database\BaseConnection->query('DROP TABLE `tou...')
+#4 D:\xampp\htdocs\Tourism-Rizal\app\Database\Migrations\2023-08-10-025112_CreateTouristCentres.php(24): CodeIgniter\Database\Forge->dropTable('tourist_centres')
+#5 D:\xampp\htdocs\Tourism-Rizal\system\Database\MigrationRunner.php(877): App\Database\Migrations\CreateTouristCentres->down()
+#6 D:\xampp\htdocs\Tourism-Rizal\system\Database\MigrationRunner.php(299): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 D:\xampp\htdocs\Tourism-Rizal\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(1)
+#8 D:\xampp\htdocs\Tourism-Rizal\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 D:\xampp\htdocs\Tourism-Rizal\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 D:\xampp\htdocs\Tourism-Rizal\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-08-10 03:10:26 --> mysqli_sql_exception: Unknown table 'dot_managementdb.tourist_centres' in D:\xampp\htdocs\Tourism-Rizal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\xampp\htdocs\Tourism-Rizal\system\Database\MySQLi\Connection.php(295): mysqli->query('DROP TABLE `tou...', 0)
+#1 D:\xampp\htdocs\Tourism-Rizal\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE `tou...')
+#2 D:\xampp\htdocs\Tourism-Rizal\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE `tou...')
+#3 D:\xampp\htdocs\Tourism-Rizal\system\Database\Forge.php(637): CodeIgniter\Database\BaseConnection->query('DROP TABLE `tou...')
+#4 D:\xampp\htdocs\Tourism-Rizal\app\Database\Migrations\2023-08-10-025112_CreateTouristCentres.php(24): CodeIgniter\Database\Forge->dropTable('tourist_centres')
+#5 D:\xampp\htdocs\Tourism-Rizal\system\Database\MigrationRunner.php(877): App\Database\Migrations\CreateTouristCentres->down()
+#6 D:\xampp\htdocs\Tourism-Rizal\system\Database\MigrationRunner.php(299): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 D:\xampp\htdocs\Tourism-Rizal\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(1)
+#8 D:\xampp\htdocs\Tourism-Rizal\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 D:\xampp\htdocs\Tourism-Rizal\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 D:\xampp\htdocs\Tourism-Rizal\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}

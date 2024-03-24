@@ -1,0 +1,834 @@
+INFO - 2023-08-09 14:54:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-09 15:12:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-09 15:12:19 --> mysqli_sql_exception: Table 'dot_managementdb.admin_users' doesn't exist in D:\xampp\htdocs\Tourism-Rizal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\xampp\htdocs\Tourism-Rizal\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\Tourism-Rizal\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\Tourism-Rizal\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\Tourism-Rizal\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\Tourism-Rizal\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\Tourism-Rizal\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 D:\xampp\htdocs\Tourism-Rizal\app\Controllers\SigninController.php(21): CodeIgniter\BaseModel->first()
+#7 D:\xampp\htdocs\Tourism-Rizal\system\CodeIgniter.php(934): App\Controllers\SigninController->loginAuth()
+#8 D:\xampp\htdocs\Tourism-Rizal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+#9 D:\xampp\htdocs\Tourism-Rizal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\Tourism-Rizal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\Tourism-Rizal\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-08-09 15:12:19 --> Table 'dot_managementdb.admin_users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `admin_users`
+WHERE `email` = \'wan@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `admin_users`
+WHERE `email` = \'wan@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `admin_users`
+WHERE `email` = \'wan@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `admin_users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\SigninController.php(21): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\SigninController->loginAuth()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+INFO - 2023-08-09 15:21:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-09 15:21:22 --> mysqli_sql_exception: Table 'dot_managementdb.admin_users' doesn't exist in D:\xampp\htdocs\Tourism-Rizal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\xampp\htdocs\Tourism-Rizal\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\Tourism-Rizal\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\Tourism-Rizal\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\Tourism-Rizal\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\Tourism-Rizal\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\Tourism-Rizal\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 D:\xampp\htdocs\Tourism-Rizal\app\Controllers\SigninController.php(21): CodeIgniter\BaseModel->first()
+#7 D:\xampp\htdocs\Tourism-Rizal\system\CodeIgniter.php(934): App\Controllers\SigninController->loginAuth()
+#8 D:\xampp\htdocs\Tourism-Rizal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+#9 D:\xampp\htdocs\Tourism-Rizal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\Tourism-Rizal\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\Tourism-Rizal\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-08-09 15:21:22 --> Table 'dot_managementdb.admin_users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `admin_users`
+WHERE `email` = \'wan@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `admin_users`
+WHERE `email` = \'wan@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `admin_users`
+WHERE `email` = \'wan@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `admin_users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\SigninController.php(21): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\SigninController->loginAuth()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+INFO - 2023-08-09 15:23:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-09 15:23:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-09 15:23:58 --> Undefined variable $errors
+in APPPATH\Views\admin\foodManagement.php on line 43.
+ 1 APPPATH\Views\admin\foodManagement.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 15:25:37 --> Undefined variable $errors
+in APPPATH\Views\admin\foodManagement.php on line 43.
+ 1 APPPATH\Views\admin\foodManagement.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 15:25:42 --> Undefined variable $errors
+in APPPATH\Views\admin\foodManagement.php on line 43.
+ 1 APPPATH\Views\admin\foodManagement.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 15:26:16 --> Undefined variable $errors
+in APPPATH\Views\admin\foodManagement.php on line 43.
+ 1 APPPATH\Views\admin\foodManagement.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 15:26:17 --> Undefined variable $errors
+in APPPATH\Views\admin\foodManagement.php on line 43.
+ 1 APPPATH\Views\admin\foodManagement.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 15:26:18 --> Undefined variable $errors
+in APPPATH\Views\admin\foodManagement.php on line 43.
+ 1 APPPATH\Views\admin\foodManagement.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 15:26:18 --> Undefined variable $errors
+in APPPATH\Views\admin\foodManagement.php on line 43.
+ 1 APPPATH\Views\admin\foodManagement.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 15:26:18 --> Undefined variable $errors
+in APPPATH\Views\admin\foodManagement.php on line 43.
+ 1 APPPATH\Views\admin\foodManagement.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 15:40:31 --> Undefined variable $errors
+in APPPATH\Views\admin\foodManagement.php on line 43.
+ 1 APPPATH\Views\admin\foodManagement.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 15:40:33 --> Undefined variable $errors
+in APPPATH\Views\admin\foodManagement.php on line 43.
+ 1 APPPATH\Views\admin\foodManagement.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 15:40:33 --> Undefined variable $errors
+in APPPATH\Views\admin\foodManagement.php on line 43.
+ 1 APPPATH\Views\admin\foodManagement.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 15:40:34 --> Undefined variable $errors
+in APPPATH\Views\admin\foodManagement.php on line 43.
+ 1 APPPATH\Views\admin\foodManagement.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 15:40:34 --> Undefined variable $errors
+in APPPATH\Views\admin\foodManagement.php on line 43.
+ 1 APPPATH\Views\admin\foodManagement.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 15:40:59 --> Undefined variable $errors
+in APPPATH\Views\admin\foodManagement.php on line 43.
+ 1 APPPATH\Views\admin\foodManagement.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 15:41:00 --> Undefined variable $errors
+in APPPATH\Views\admin\foodManagement.php on line 43.
+ 1 APPPATH\Views\admin\foodManagement.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 15:41:00 --> Undefined variable $errors
+in APPPATH\Views\admin\foodManagement.php on line 43.
+ 1 APPPATH\Views\admin\foodManagement.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 15:41:00 --> Undefined variable $errors
+in APPPATH\Views\admin\foodManagement.php on line 43.
+ 1 APPPATH\Views\admin\foodManagement.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 15:41:01 --> Undefined variable $errors
+in APPPATH\Views\admin\foodManagement.php on line 43.
+ 1 APPPATH\Views\admin\foodManagement.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 15:41:01 --> Undefined variable $errors
+in APPPATH\Views\admin\foodManagement.php on line 43.
+ 1 APPPATH\Views\admin\foodManagement.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 15:41:01 --> Undefined variable $errors
+in APPPATH\Views\admin\foodManagement.php on line 43.
+ 1 APPPATH\Views\admin\foodManagement.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 15:41:01 --> Undefined variable $errors
+in APPPATH\Views\admin\foodManagement.php on line 43.
+ 1 APPPATH\Views\admin\foodManagement.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 15:41:01 --> Undefined variable $errors
+in APPPATH\Views\admin\foodManagement.php on line 43.
+ 1 APPPATH\Views\admin\foodManagement.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 15:41:27 --> Undefined variable $errors
+in APPPATH\Views\admin\foodManagement.php on line 43.
+ 1 APPPATH\Views\admin\foodManagement.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 15:45:32 --> Undefined variable $errors
+in APPPATH\Views\admin\foodManagement.php on line 43.
+ 1 APPPATH\Views\admin\foodManagement.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 15:45:36 --> Undefined variable $errors
+in APPPATH\Views\admin\foodManagement.php on line 43.
+ 1 APPPATH\Views\admin\foodManagement.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 15:45:44 --> Undefined variable $errors
+in APPPATH\Views\admin\foodManagement.php on line 43.
+ 1 APPPATH\Views\admin\foodManagement.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 15:48:38 --> Undefined variable $errors
+in APPPATH\Views\admin\foodManagement.php on line 43.
+ 1 APPPATH\Views\admin\foodManagement.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 15:48:46 --> Undefined variable $errors
+in APPPATH\Views\admin\foodManagement.php on line 43.
+ 1 APPPATH\Views\admin\foodManagement.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+ERROR - 2023-08-09 16:06:50 --> Error connecting to the database: Error: Class 'SQLite3' not found in D:\xampp\htdocs\Tourism-Rizal\system\Database\SQLite3\Connection.php:89
+Stack trace:
+#0 D:\xampp\htdocs\Tourism-Rizal\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLite3\Connection->connect(false)
+#1 D:\xampp\htdocs\Tourism-Rizal\system\Database\SQLite3\Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\Tourism-Rizal\system\Test\DatabaseTestTrait.php(74): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 D:\xampp\htdocs\Tourism-Rizal\system\Test\DatabaseTestTrait.php(54): ExampleDatabaseTest->loadDependencies()
+#4 D:\xampp\htdocs\Tourism-Rizal\system\Test\CIUnitTestCase.php(248): ExampleDatabaseTest->setUpDatabase()
+#5 D:\xampp\htdocs\Tourism-Rizal\vendor\phpunit\phpunit\src\Framework\TestCase.php(1207): CodeIgniter\Test\CIUnitTestCase->setUp()
+#6 D:\xampp\htdocs\Tourism-Rizal\vendor\phpunit\phpunit\src\Framework\TestResult.php(728): PHPUnit\Framework\TestCase->runBare()
+#7 D:\xampp\htdocs\Tourism-Rizal\vendor\phpunit\phpunit\src\Framework\TestCase.php(964): PHPUnit\Framework\TestResult->run(Object(ExampleDatabaseTest))
+#8 D:\xampp\htdocs\Tourism-Rizal\vendor\phpunit\phpunit\src\Framework\TestSuite.php(684): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#9 D:\xampp\htdocs\Tourism-Rizal\vendor\phpunit\phpunit\src\Framework\TestSuite.php(684): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#10 D:\xampp\htdocs\Tourism-Rizal\vendor\phpunit\phpunit\src\Framework\TestSuite.php(684): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#11 D:\xampp\htdocs\Tourism-Rizal\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(651): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#12 D:\xampp\htdocs\Tourism-Rizal\vendor\phpunit\phpunit\src\TextUI\Command.php(144): PHPUnit\TextUI\TestRunner->run(Object(PHPUnit\Framework\TestSuite), Array, Array, true)
+#13 D:\xampp\htdocs\Tourism-Rizal\vendor\phpunit\phpunit\src\TextUI\Command.php(97): PHPUnit\TextUI\Command->run(Array, true)
+#14 D:\xampp\htdocs\Tourism-Rizal\vendor\phpunit\phpunit\phpunit(107): PHPUnit\TextUI\Command::main()
+#15 {main}
+ERROR - 2023-08-09 16:06:50 --> Error connecting to the database: Error: Class 'SQLite3' not found in D:\xampp\htdocs\Tourism-Rizal\system\Database\SQLite3\Connection.php:89
+Stack trace:
+#0 D:\xampp\htdocs\Tourism-Rizal\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLite3\Connection->connect(false)
+#1 D:\xampp\htdocs\Tourism-Rizal\system\Database\SQLite3\Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\Tourism-Rizal\system\Test\DatabaseTestTrait.php(74): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 D:\xampp\htdocs\Tourism-Rizal\system\Test\DatabaseTestTrait.php(54): ExampleDatabaseTest->loadDependencies()
+#4 D:\xampp\htdocs\Tourism-Rizal\system\Test\CIUnitTestCase.php(248): ExampleDatabaseTest->setUpDatabase()
+#5 D:\xampp\htdocs\Tourism-Rizal\vendor\phpunit\phpunit\src\Framework\TestCase.php(1207): CodeIgniter\Test\CIUnitTestCase->setUp()
+#6 D:\xampp\htdocs\Tourism-Rizal\vendor\phpunit\phpunit\src\Framework\TestResult.php(728): PHPUnit\Framework\TestCase->runBare()
+#7 D:\xampp\htdocs\Tourism-Rizal\vendor\phpunit\phpunit\src\Framework\TestCase.php(964): PHPUnit\Framework\TestResult->run(Object(ExampleDatabaseTest))
+#8 D:\xampp\htdocs\Tourism-Rizal\vendor\phpunit\phpunit\src\Framework\TestSuite.php(684): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#9 D:\xampp\htdocs\Tourism-Rizal\vendor\phpunit\phpunit\src\Framework\TestSuite.php(684): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#10 D:\xampp\htdocs\Tourism-Rizal\vendor\phpunit\phpunit\src\Framework\TestSuite.php(684): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#11 D:\xampp\htdocs\Tourism-Rizal\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(651): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#12 D:\xampp\htdocs\Tourism-Rizal\vendor\phpunit\phpunit\src\TextUI\Command.php(144): PHPUnit\TextUI\TestRunner->run(Object(PHPUnit\Framework\TestSuite), Array, Array, true)
+#13 D:\xampp\htdocs\Tourism-Rizal\vendor\phpunit\phpunit\src\TextUI\Command.php(97): PHPUnit\TextUI\Command->run(Array, true)
+#14 D:\xampp\htdocs\Tourism-Rizal\vendor\phpunit\phpunit\phpunit(107): PHPUnit\TextUI\Command::main()
+#15 {main}
+ERROR - 2023-08-09 16:08:48 --> Error connecting to the database: Error: Class 'SQLite3' not found in D:\xampp\htdocs\Tourism-Rizal\system\Database\SQLite3\Connection.php:89
+Stack trace:
+#0 D:\xampp\htdocs\Tourism-Rizal\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLite3\Connection->connect(false)
+#1 D:\xampp\htdocs\Tourism-Rizal\system\Database\SQLite3\Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\Tourism-Rizal\system\Test\DatabaseTestTrait.php(74): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 D:\xampp\htdocs\Tourism-Rizal\system\Test\DatabaseTestTrait.php(54): ExampleDatabaseTest->loadDependencies()
+#4 D:\xampp\htdocs\Tourism-Rizal\system\Test\CIUnitTestCase.php(248): ExampleDatabaseTest->setUpDatabase()
+#5 D:\xampp\htdocs\Tourism-Rizal\vendor\phpunit\phpunit\src\Framework\TestCase.php(1207): CodeIgniter\Test\CIUnitTestCase->setUp()
+#6 D:\xampp\htdocs\Tourism-Rizal\vendor\phpunit\phpunit\src\Framework\TestResult.php(728): PHPUnit\Framework\TestCase->runBare()
+#7 D:\xampp\htdocs\Tourism-Rizal\vendor\phpunit\phpunit\src\Framework\TestCase.php(964): PHPUnit\Framework\TestResult->run(Object(ExampleDatabaseTest))
+#8 D:\xampp\htdocs\Tourism-Rizal\vendor\phpunit\phpunit\src\Framework\TestSuite.php(684): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#9 D:\xampp\htdocs\Tourism-Rizal\vendor\phpunit\phpunit\src\Framework\TestSuite.php(684): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#10 D:\xampp\htdocs\Tourism-Rizal\vendor\phpunit\phpunit\src\Framework\TestSuite.php(684): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#11 D:\xampp\htdocs\Tourism-Rizal\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(651): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#12 D:\xampp\htdocs\Tourism-Rizal\vendor\phpunit\phpunit\src\TextUI\Command.php(144): PHPUnit\TextUI\TestRunner->run(Object(PHPUnit\Framework\TestSuite), Array, Array, true)
+#13 D:\xampp\htdocs\Tourism-Rizal\vendor\phpunit\phpunit\src\TextUI\Command.php(97): PHPUnit\TextUI\Command->run(Array, true)
+#14 D:\xampp\htdocs\Tourism-Rizal\vendor\phpunit\phpunit\phpunit(107): PHPUnit\TextUI\Command::main()
+#15 {main}
+ERROR - 2023-08-09 16:08:48 --> Error connecting to the database: Error: Class 'SQLite3' not found in D:\xampp\htdocs\Tourism-Rizal\system\Database\SQLite3\Connection.php:89
+Stack trace:
+#0 D:\xampp\htdocs\Tourism-Rizal\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLite3\Connection->connect(false)
+#1 D:\xampp\htdocs\Tourism-Rizal\system\Database\SQLite3\Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\Tourism-Rizal\system\Test\DatabaseTestTrait.php(74): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 D:\xampp\htdocs\Tourism-Rizal\system\Test\DatabaseTestTrait.php(54): ExampleDatabaseTest->loadDependencies()
+#4 D:\xampp\htdocs\Tourism-Rizal\system\Test\CIUnitTestCase.php(248): ExampleDatabaseTest->setUpDatabase()
+#5 D:\xampp\htdocs\Tourism-Rizal\vendor\phpunit\phpunit\src\Framework\TestCase.php(1207): CodeIgniter\Test\CIUnitTestCase->setUp()
+#6 D:\xampp\htdocs\Tourism-Rizal\vendor\phpunit\phpunit\src\Framework\TestResult.php(728): PHPUnit\Framework\TestCase->runBare()
+#7 D:\xampp\htdocs\Tourism-Rizal\vendor\phpunit\phpunit\src\Framework\TestCase.php(964): PHPUnit\Framework\TestResult->run(Object(ExampleDatabaseTest))
+#8 D:\xampp\htdocs\Tourism-Rizal\vendor\phpunit\phpunit\src\Framework\TestSuite.php(684): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#9 D:\xampp\htdocs\Tourism-Rizal\vendor\phpunit\phpunit\src\Framework\TestSuite.php(684): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#10 D:\xampp\htdocs\Tourism-Rizal\vendor\phpunit\phpunit\src\Framework\TestSuite.php(684): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#11 D:\xampp\htdocs\Tourism-Rizal\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(651): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#12 D:\xampp\htdocs\Tourism-Rizal\vendor\phpunit\phpunit\src\TextUI\Command.php(144): PHPUnit\TextUI\TestRunner->run(Object(PHPUnit\Framework\TestSuite), Array, Array, true)
+#13 D:\xampp\htdocs\Tourism-Rizal\vendor\phpunit\phpunit\src\TextUI\Command.php(97): PHPUnit\TextUI\Command->run(Array, true)
+#14 D:\xampp\htdocs\Tourism-Rizal\vendor\phpunit\phpunit\phpunit(107): PHPUnit\TextUI\Command::main()
+#15 {main}
+INFO - 2023-08-09 16:10:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-09 16:10:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-09 16:10:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-09 16:17:31 --> Undefined variable: errors
+in APPPATH\Views\admin\foodManagement.php on line 43.
+ 1 APPPATH\Views\admin\foodManagement.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 43, [])
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 16:18:21 --> Undefined variable: errors
+in APPPATH\Views\admin\foodManagement.php on line 43.
+ 1 APPPATH\Views\admin\foodManagement.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 43, [])
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 16:19:21 --> Undefined variable: errors
+in APPPATH\Views\admin\foodManagement.php on line 43.
+ 1 APPPATH\Views\admin\foodManagement.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 43, [])
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 16:19:22 --> Undefined variable: errors
+in APPPATH\Views\admin\foodManagement.php on line 43.
+ 1 APPPATH\Views\admin\foodManagement.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 43, [])
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 16:19:23 --> Undefined variable: errors
+in APPPATH\Views\admin\foodManagement.php on line 43.
+ 1 APPPATH\Views\admin\foodManagement.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 43, [])
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 16:19:46 --> Undefined variable: errors
+in APPPATH\Views\admin\foodManagement.php on line 44.
+ 1 APPPATH\Views\admin\foodManagement.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 44, [])
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 16:19:47 --> Undefined variable: errors
+in APPPATH\Views\admin\foodManagement.php on line 44.
+ 1 APPPATH\Views\admin\foodManagement.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 44, [])
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 16:19:48 --> Undefined variable: errors
+in APPPATH\Views\admin\foodManagement.php on line 44.
+ 1 APPPATH\Views\admin\foodManagement.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 44, [])
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 16:19:48 --> Undefined variable: errors
+in APPPATH\Views\admin\foodManagement.php on line 44.
+ 1 APPPATH\Views\admin\foodManagement.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 44, [])
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 16:19:48 --> Undefined variable: errors
+in APPPATH\Views\admin\foodManagement.php on line 44.
+ 1 APPPATH\Views\admin\foodManagement.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 44, [])
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 16:19:48 --> Undefined variable: errors
+in APPPATH\Views\admin\foodManagement.php on line 44.
+ 1 APPPATH\Views\admin\foodManagement.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 44, [])
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 16:19:49 --> Undefined variable: errors
+in APPPATH\Views\admin\foodManagement.php on line 44.
+ 1 APPPATH\Views\admin\foodManagement.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 44, [])
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 16:19:49 --> Undefined variable: errors
+in APPPATH\Views\admin\foodManagement.php on line 44.
+ 1 APPPATH\Views\admin\foodManagement.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 44, [])
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 16:19:49 --> Undefined variable: errors
+in APPPATH\Views\admin\foodManagement.php on line 44.
+ 1 APPPATH\Views\admin\foodManagement.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 44, [])
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 16:19:49 --> Undefined variable: errors
+in APPPATH\Views\admin\foodManagement.php on line 44.
+ 1 APPPATH\Views\admin\foodManagement.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 44, [])
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 16:20:05 --> Undefined variable: errors
+in APPPATH\Views\admin\foodManagement.php on line 44.
+ 1 APPPATH\Views\admin\foodManagement.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 44, [])
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 16:20:06 --> Undefined variable: errors
+in APPPATH\Views\admin\foodManagement.php on line 44.
+ 1 APPPATH\Views\admin\foodManagement.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 44, [])
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 16:20:06 --> Undefined variable: errors
+in APPPATH\Views\admin\foodManagement.php on line 44.
+ 1 APPPATH\Views\admin\foodManagement.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 44, [])
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 16:20:07 --> Undefined variable: errors
+in APPPATH\Views\admin\foodManagement.php on line 44.
+ 1 APPPATH\Views\admin\foodManagement.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 44, [])
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 16:20:07 --> Undefined variable: errors
+in APPPATH\Views\admin\foodManagement.php on line 44.
+ 1 APPPATH\Views\admin\foodManagement.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 44, [])
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 16:20:07 --> Undefined variable: errors
+in APPPATH\Views\admin\foodManagement.php on line 44.
+ 1 APPPATH\Views\admin\foodManagement.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 44, [])
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 16:20:07 --> Undefined variable: errors
+in APPPATH\Views\admin\foodManagement.php on line 44.
+ 1 APPPATH\Views\admin\foodManagement.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 44, [])
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 16:20:40 --> Undefined variable: errors
+in APPPATH\Views\admin\foodManagement.php on line 44.
+ 1 APPPATH\Views\admin\foodManagement.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 44, [])
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 16:20:41 --> Undefined variable: errors
+in APPPATH\Views\admin\foodManagement.php on line 44.
+ 1 APPPATH\Views\admin\foodManagement.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 44, [])
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 16:20:41 --> Undefined variable: errors
+in APPPATH\Views\admin\foodManagement.php on line 44.
+ 1 APPPATH\Views\admin\foodManagement.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 44, [])
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 16:20:41 --> Undefined variable: errors
+in APPPATH\Views\admin\foodManagement.php on line 44.
+ 1 APPPATH\Views\admin\foodManagement.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 44, [])
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 16:20:42 --> Undefined variable: errors
+in APPPATH\Views\admin\foodManagement.php on line 44.
+ 1 APPPATH\Views\admin\foodManagement.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 44, [])
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')
+CRITICAL - 2023-08-09 16:20:42 --> Undefined variable: errors
+in APPPATH\Views\admin\foodManagement.php on line 44.
+ 1 APPPATH\Views\admin\foodManagement.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: errors', 'D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php', 44, [])
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\xampp\\htdocs\\Tourism-Rizal\\app\\Views\\admin\\foodManagement.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/foodManagement.php', [], true)
+ 5 APPPATH\Controllers\FoodManagement.php(15): view('/admin/foodManagement.php')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FoodManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FoodManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\Tourism-Rizal\\public\\index.php')

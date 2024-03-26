@@ -1,0 +1,4 @@
+Implementation of Admin can upload 360 image
+Implementation of admin can Edit about us page info
+
+fix image thumbnail stretched in article

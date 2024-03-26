@@ -7,7 +7,7 @@ class TouristCentre extends Model
 {
     protected $table = 'tourist_centres'; // Replace with your actual table name
     protected $primaryKey = 'id'; // Primary key column name
-    protected $allowedFields = ['name', 'description', 'visible', 'image', 'date_posted'];
+    protected $allowedFields = ['name', 'description', 'visible', 'image', 'image360', 'date_posted'];
 
     // Add other model-related code if needed
     protected $DBGroup          = 'default';

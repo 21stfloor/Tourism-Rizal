@@ -37,55 +37,77 @@ class TouristCentreController extends Controller
     {
         $request = \Config\Services::request();
 
-        if(!$request->getPost()){
-            return redirect()->back()->withInput()->with('errors', ['invalid request']);
+        if (!$request->getPost()) {
+            return redirect()->back()->withInput()->with('errors', ['Invalid request']);
         }
 
         if (!$this->validate([
             'name' => 'required',
             'description' => 'required',
-            'image' => 'uploaded[image]|max_size[image,1024]|ext_in[image,jpg,jpeg,png,gif]',
+            'image' => 'max_size[image,102400]|ext_in[image,jpg,jpeg,png,gif]',
+            // 'image360' => 'max_size[image360,102400]|ext_in[image360,jpg,jpeg,png,gif]',
             // ... (other validation rules)
         ])) {
+            $errors = $this->validator->getErrors();
             // If validation fails, redirect back with errors
-            return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
+            return redirect()->back()->withInput()->with('errors', $errors);
         }
 
         $id = $request->getPost('id');
         $isNewRecord = true;
-        if ($request->getPost('id')) {
+        if ($id) {
             $isNewRecord = false;
         }
 
+        $model = new TouristCentre();
+        $existingImage = null;
+        $existingImage360 = null;
+        if (!$isNewRecord) {
+            // Retrieve existing image names if it's an update operation
+            $existingData = $model->find($id);
+            $existingImage = $existingData['image'];
+            $existingImage360 = $existingData['image360'];
+        }
+
+        // Handle regular image upload
         $image = $request->getFile('image');
-        $imageName = $image->getRandomName();
-        
-        // Configure the upload path
-        $uploadPath = './public/uploads/images/';
-        $image->move($uploadPath, $imageName); // Move the image to the target directory
-        $visible = $request->getPost('visible')??0;
+        $imageName = $existingImage;
+        if ($image->isValid() && !$image->hasMoved()) {
+            $imageName = $image->getRandomName();
+            $uploadPath = './public/uploads/images/';
+            $image->move($uploadPath, $imageName);
+        }
+
+        // Handle image360 upload
+        $image360 = $request->getFile('image360');
+        $image360Name = $existingImage360;
+        if ($image360->isValid() && !$image360->hasMoved()) {
+            $image360Name = $image360->getRandomName();
+            $uploadPath = './public/uploads/images360/';
+            $image360->move($uploadPath, $image360Name);
+        }
+
+        $visible = $request->getPost('visible') ?? 0;
 
         $data = [
             'name' => $request->getPost('name'),
             'description' => $request->getPost('description'),
-            'image' => $imageName, // Store the filename in the database
-            'visible' => (int)$visible
+            'image' => $imageName, // Store the regular image filename in the database
+            'image360' => $image360Name, // Store the image360 filename in the database
+            'visible' => (int) $visible
             // ... (other fields)
         ];
 
-        $model = new TouristCentre();
         $message = 'Tourist Centre was created successfully!';
-        if($isNewRecord){            
-            $model->insert($data);
-        }
-        else{
+        if (!$isNewRecord) {
             $model->update($id, $data);
             $message = 'Tourist Centre was updated successfully!';
+        } else {
+            $model->insert($data);
         }
 
         // Redirect to a page after successful creation
         return redirect()->to('views/admin/attractionsManagement.php')->with('messages', [$message]);
-        
     }
 
     public function delete($id)

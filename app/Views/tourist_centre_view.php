@@ -33,11 +33,16 @@
             color: rgba(200, 200, 200, 1);
             padding: .25rem 1.75rem;
         }
+
+        .center-image {
+            display: flex;
+            justify-content: center;
+        }
     </style>
 </head>
 
 <body>
-    <?php include(APPPATH . 'Views/partials/navbar.php'); ?>
+    <?php include (APPPATH . 'Views/partials/navbar.php'); ?>
     <!-- HEADER: MENU + HEROE SECTION -->
     <header>
 
@@ -77,9 +82,20 @@
                     <p class="card-text"><small class="text-body-secondary">Date posted
                             <?= $thumbnail['created_at'] ?>
                         </small></p>
+                    <div class="text-center">
+                        <img src="<?= base_url('public/uploads/images/' . $thumbnail['image']) ?>"
+                            class="w-50 img-fluid card-img-top" alt="Thumbnail" />
+                    </div>
+                    <div id="wrapper" style="height:600px;width:100%" class="mt-2">
+                        <a-scene embedded style="height:100%;width:100%">
+                            <a-assets>
+                                <img id="panorama" src="<?= base_url('images/360view.jpg') ?>" />
+                            </a-assets>
+                            <a-sky src="#panorama" rotation="0 -130 0"></a-sky>
+                        </a-scene>
+                    </div>
                 </div>
-                <img src="<?= base_url('public/uploads/images/' . $thumbnail['image']) ?>" class="card-img-top"
-                    alt="Thumbnail">
+
                 <div class="card-body">
 
                     <p class="card-text">
@@ -110,6 +126,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
 </body>
 
 </html>

@@ -37,8 +37,8 @@ $routes->get('/home', 'Home::index');
 $routes->get('/attractions', 'Attractions::index');
 $routes->get('views/attractions', 'Attractions::index/attractions');
 $routes->get('/food', 'FoodController::thumbnail');
-$routes->get('/aboutus', 'AboutUs::index');
-$routes->get('views/aboutus', 'AboutUs::index');
+$routes->get('/aboutus', 'AboutUsController::index');
+$routes->get('views/aboutus', 'AboutUsController::index');
 
 $routes->get('upload', 'Upload::index');
 $routes->post('upload/upload', 'Upload::upload');
@@ -126,6 +126,14 @@ $routes->get('news/create', 'NewsController::create', ['filter' => 'authGuard'])
 $routes->post('news/store', 'NewsController::store', ['filter' => 'authGuard']);
 $routes->post('news/delete/(:num)', 'NewsController::delete/$1', ['filter' => 'authGuard']);
 $routes->get('news/edit/(:num)', 'NewsController::edit/$1', ['filter' => 'authGuard']);
+
+$routes->post('aboutus/store', 'AboutUsController::store', ['filter' => 'authGuard']);
+$routes->get('aboutus/edit', 'AboutUsController::edit', ['filter' => 'authGuard']);
+$routes->post('about/update', 'AboutUsController::update', ['filter' => 'authGuard']);
+
+// $routes->post('about/store', 'About::store');
+// $routes->get('about/edit', 'About::edit');
+
 
 
 $routes->get('tourist_centre/view/(:num)', 'Attractions::view/$1');

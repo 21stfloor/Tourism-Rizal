@@ -156,7 +156,7 @@
     <script src="js/main.js"></script>
     <script src="js/three.min.js"></script>
     <script src="js/panolens.min.js"></script>
-    <script>
+        <script>
         function toggleMenu() {
             var menuItems = document.getElementsByClassName('menu-item');
             for (var i = 0; i < menuItems.length; i++) {

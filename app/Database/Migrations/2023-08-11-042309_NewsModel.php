@@ -12,7 +12,7 @@ class NewsModel extends Migration
             'id'            => ['type' => 'INT', 'constraint' => 5, 'unsigned' => true, 'auto_increment' => true],
             'name'          => ['type' => 'VARCHAR', 'constraint' => 255],
             'description'   => ['type' => 'TEXT'],
-            'image'         => ['type' => 'VARCHAR', 'constraint' => 255],
+            'image'         => ['type' => 'VARCHAR', 'constraint' => 255],            
             'visible' => ['type' => 'BOOLEAN', 'default' => true],
             'created_at' => ['type' => 'datetime'],
         ]);

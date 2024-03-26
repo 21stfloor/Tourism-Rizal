@@ -131,8 +131,12 @@ if (!$isNewRecord) {
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="/js/scripts.js"></script>
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
             $('.summernote').summernote();
+            var noteBar = $('.note-toolbar');
+            noteBar.find('[data-toggle]').each(function() {
+                $(this).attr('data-bs-toggle', $(this).attr('data-toggle')).removeAttr('data-toggle');
+            });
         });
 
         $('input[type="checkbox"]').change(function () {

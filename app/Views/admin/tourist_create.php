@@ -99,7 +99,11 @@ if (!$isNewRecord) {
                         </div>
                         <div class="form-group">
                             <label for="image">Image:</label>
-                            <input type="file" id="image" name="image" class="form-control-file">
+                            <input type="file" id="image" name="image" class="form-control-file" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="image360">360 Image:</label>
+                            <input type="file" id="image360" name="image360" class="form-control-file">
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="<?= $visible ?? 1 ?>"
@@ -131,8 +135,12 @@ if (!$isNewRecord) {
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="/js/scripts.js"></script>
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
             $('.summernote').summernote();
+            var noteBar = $('.note-toolbar');
+            noteBar.find('[data-toggle]').each(function() {
+                $(this).attr('data-bs-toggle', $(this).attr('data-toggle')).removeAttr('data-toggle');
+            });
         });
 
         $('input[type="checkbox"]').change(function () {

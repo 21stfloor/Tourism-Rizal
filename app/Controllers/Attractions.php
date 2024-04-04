@@ -13,7 +13,7 @@ class Attractions extends BaseController
         $model = new TouristCentre(); // Replace 'YourModel' with your actual model name
 
         // Retrieve records with visible=1 and sort by created_at in descending order
-        $thumbnails = $model->select('id, name, image, created_at')
+        $thumbnails = $model->select('id, name, image, created_at, image360')
             ->where('visible', 1)
             ->orderBy('created_at', 'DESC')
             ->findAll();

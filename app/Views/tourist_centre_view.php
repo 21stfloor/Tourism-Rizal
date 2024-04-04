@@ -89,7 +89,7 @@
                     <div id="wrapper" style="height:600px;width:100%" class="mt-2">
                         <a-scene embedded style="height:100%;width:100%">
                             <a-assets>
-                                <img id="panorama" src="<?= base_url('images/360view.jpg') ?>" />
+                                <img id="panorama" src="<?= base_url('public/uploads/images360/' . $thumbnail['image360']) ?>" />
                             </a-assets>
                             <a-sky src="#panorama" rotation="0 -130 0"></a-sky>
                         </a-scene>

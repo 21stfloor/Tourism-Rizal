@@ -32,12 +32,37 @@
                 <!-- Page content-->
                 <div class="container-fluid">
                     <h1 class="mt-4"> Admin accounts </h1>
-                    <table class="table table-bordered">
+                    <?php if (session()->has('messages')) : ?>
+                        <div class="alert alert-info alert-dismissible fade show" role="alert">
+                            <ul>
+                                <?php foreach (session('messages') as $messages) : ?>
+                                    <li><?= $messages ?></li>
+                                <?php endforeach ?>
+                            </ul>
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    <?php endif ?>
+                    <?php if (session()->has('errors')): ?>
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            <strong>Validation errors:</strong>
+                            <ul>
+                                <?php foreach (session('errors') as $error): ?>
+                                    <li>
+                                        <?= $error ?>
+                                    </li>
+                                <?php endforeach ?>
+                            </ul>
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    <?php endif ?>
+                    <a href="<?= site_url('users/create'); ?>" class="btn btn-success mb-3">Add New Admin User</a>
+                    <table id="table" class="table table-bordered">
                         <thead>
                             <tr>
                                 <th>Name</th>
                                 <th>Email</th>
                                 <th>Created At</th>
+                                <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -46,6 +71,10 @@
                                     <td><?= $user['name']; ?></td>
                                     <td><?= $user['email']; ?></td>
                                     <td><?= $user['created_at']; ?></td>
+                                    <td>
+                                        <button class="btn btn-primary edit-button" data-id="<?= $user['id'] ?>">Edit</button>
+                                        <button class="btn btn-danger delete-button" data-id="<?= $user['id'] ?>">Delete</button>
+                                    </td>
                                 </tr>
                             <?php endforeach; ?>
                         </tbody>
@@ -55,9 +84,55 @@
             </div>
         </div>
         <!-- Bootstrap core JS-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> -->
         <!-- Core theme JS-->
-        <script src="/js/scripts.js"></script>
+        <?php include(APPPATH . 'Views/partials/scripts.php'); ?>
+        <script>
+            $(document).ready(function () {
+                const table = $('#table').DataTable();
+
+                $(document).on('click', '.edit-button', function () {
+                    var id = $(this).data('id');
+                    window.location.href = '<?= site_url('users/edit') ?>/' + id;
+                });
+
+                table.on('click', '.delete-button', function () {
+                    var id = $(this).data('id');
+                    bootbox.confirm({
+                        message: "Are you sure you want to delete this user?",
+                        buttons: {
+                            confirm: {
+                                label: 'Yes',
+                                className: 'btn-danger'
+                            },
+                            cancel: {
+                                label: 'No',
+                                className: 'btn-secondary'
+                            }
+                        },
+                        callback: function (result) {
+                            if (result) {
+                                // User confirmed, perform AJAX delete request
+                                $.ajax({
+                                    url: '<?= site_url('users/delete') ?>/' + id,
+                                    method: 'POST',
+                                    success: function (response) {
+                                        // Handle success, such as refreshing the table
+                                        location.reload();
+                                    },
+                                    error: function (xhr, status, error) {
+                                        // Handle error
+                                        console.error(error);
+                                    }
+                                });
+                            }
+                        }
+                    });
+                });
+            });
+
+            
+        </script>
     </body>
 </html>

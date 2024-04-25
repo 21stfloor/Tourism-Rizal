@@ -103,6 +103,13 @@ $routes->get('/signin', 'SigninController::index');
 // $routes->match(['get','post'],'views/admin/newsManagement.php', 'NewsManagement::index');
 // $routes->match(['get','post'],'views/admin/dataManagement.php', 'DataManagement::index');
 $routes->match(['get', 'post'], 'views/admin/dataManagement.php', 'UserController::index', ['filter' => 'authGuard']);
+$routes->get('users', 'UserController::create', ['filter' => 'authGuard']);
+$routes->get('users/create', 'UserController::create', ['filter' => 'authGuard']);
+$routes->post('users/store', 'UserController::store', ['filter' => 'authGuard']);
+$routes->post('users/delete/(:num)', 'UserController::delete/$1', ['filter' => 'authGuard']);
+$routes->get('users/edit/(:num)', 'UserController::edit/$1', ['filter' => 'authGuard']);
+
+
 $routes->match(['get', 'post'], 'views/admin/attractionsManagement.php', 'TouristCentreController::index', ['filter' => 'authGuard']);
 $routes->match(['get', 'post'], 'views/admin/foodManagement.php', 'FoodController::index', ['filter' => 'authGuard']);
 $routes->match(['get', 'post'], 'views/admin/newsManagement.php', 'NewsController::index', ['filter' => 'authGuard']);

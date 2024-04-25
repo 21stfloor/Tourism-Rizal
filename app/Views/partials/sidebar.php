@@ -7,6 +7,6 @@
         <a class="list-group-item list-group-item-action list-group-item-light p-3 <?php if (isset($index) && $index == 2) echo 'active'; ?>" href="/views/admin/foodManagement.php">Food Tourism</a>
         <a class="list-group-item list-group-item-action list-group-item-light p-3 <?php if (isset($index) && $index == 3) echo 'active'; ?>" href="/views/admin/newsManagement.php">News and Announcements</a>
         <a class="list-group-item list-group-item-action list-group-item-light p-3 <?php if (isset($index) && $index == 4) echo 'active'; ?>" href=<?= site_url('aboutus/edit'); ?>>About Us Edit</a>
-        <a class="list-group-item list-group-item-action list-group-item-light p-3" href="logout">Logout</a>
+        <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?= site_url('logout'); ?>">Logout</a>
     </div>
 </div>
